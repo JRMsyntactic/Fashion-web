@@ -1,0 +1,534 @@
+body{
+    background-color: rgba(0, 0, 0, 0.733);
+    scroll-behavior: smooth 1s;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    background-color: rgb(248, 224, 171);
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 4rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+    margin: 0;
+    z-index: 999;
+    width: 80%;
+    margin-top: -0.5rem;
+}
+.name{
+    color: rgb(90, 48, 0);
+    font-weight: 500;
+    font-family: ANTIPASTO PRO;
+    font-size: 3.5rem;
+    letter-spacing: 5px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+nav ul li a {
+    color: rgb(122, 59, 0);
+    text-decoration: none;
+    font-family: Antipasto pro;
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 2px;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: rgb(122, 59, 0);
+    transition: 0.5s ease;
+    bottom: 0;
+    left: 0;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.start{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.493)), url(1771199803123.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.start h1{
+    margin: 0;
+    color: white;
+    font-size: clamp(4rem, 20vw, 200px);
+    
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+.start h2{
+    margin: 0;
+    color: white;
+    font-family: Calibri;
+}
+.start button{
+    width: fit-content;
+    margin-bottom: 10vh;
+    background-color: rgb(122, 59, 0);
+    border-radius: 20px;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    border: none;
+    transition: 0.5s ease;
+}
+
+.start button:hover{
+    color: rgb(122, 59, 0);
+    background-color: white;
+    transition: 0.5s ease;
+}
+.strt{
+    margin-bottom: 10vh;
+}
+
+
+.shop{
+    background-color: rgb(247, 218, 156);
+    margin-top: -50px;
+    padding-top: 20vh;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 200px;
+    margin-bottom: -10rem;
+}
+.shop h1{
+    color: rgb(71, 35, 0);
+    font-family: Araline;
+    font-size: 5rem;
+    margin: 0;
+}
+.shop input{
+    width: 80%;
+    max-width: 600px;
+    height: 30px;
+    border-radius: 20px;
+    font-family: antipasto pro;
+    font-size: 20px;
+    border: none;
+    border-bottom: solid 2px;
+
+}
+#container{
+    justify-self: center;
+    justify-content: space-evenly;
+    width: 80vw;
+    margin-top: 20px;
+    display: flex; 
+    gap: 20px;
+    flex-wrap: wrap;
+}
+#holder{
+    background-color: white;
+    width: 20%;
+    max-width: 15rem;
+    border-radius: 10px;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+    
+}
+#holder img{
+    margin-top: 5px;
+    margin: 0;
+    transition: 0.5s ease-in-out;
+    z-index: 1;
+    width: 100%;
+}
+.holdercont{
+    height: 70%;
+    min-height: 2rem;
+    max-height: 45rem;
+    overflow: hidden;
+}
+#holder img:hover{
+    transform: scale(2);
+}
+#holder img:hover #holder p{
+color: white;
+}
+#holder p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#holder button{
+    background-color: rgb(71, 35, 0);
+    width: 90%;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 1rem;
+    transition: 0.5s ease-in-out;
+    border: none;
+    padding: 5px;
+}
+#holder button:hover{
+    color: rgb(71, 35, 0);
+    background-color: rgb(247, 218, 156);
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+}
+.contact{
+    background-color: rgb(253, 247, 232);
+    margin: 0;
+    padding-top: 10rem;
+    display: flex;
+
+    padding-bottom: 9rem;
+}
+.addresses{
+    justify-content: center;
+    padding-left: 10%;
+    width: 50%;
+    border: 2px solid ;
+    border-bottom-left-radius: 5rem;
+    border-top-right-radius: 5rem;
+}
+.addresses h1{
+    width: 80%;
+    color: rgb(71, 35, 0);
+    font-weight: 100;
+    font-size: 5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.addresses h2{
+    width: 80%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300;
+    color: rgb(71, 35, 0);
+}
+.adrs{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: -2rem;
+    align-items: center;
+    color: rgb(71, 35, 0);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.adrs img{
+    width: 4rem;
+    height: 4rem;
+    filter: contrast(130%);
+}
+.msgfrm{
+	align-content: center;
+	justify-items: center;
+    width: 50%;
+}
+.msgfrm form{
+    display: flex;
+    flex-direction: column;
+	width: 75%;
+    gap: 2rem;
+}
+.msgfrm form input{
+    height: 3rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    text-align: start;
+    border: none;
+    box-shadow: 0px 9px 7px rgba(0, 0, 0, 0.5);
+}
+#msg{
+    height: fit-content;
+    min-height: 7rem;
+}
+#btn{
+    background-color: rgb(71, 35, 0);
+    height: 3rem;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    border: none;
+    transition: 0.5s ease-out;
+}
+#btn:hover{
+    background-color: white;
+    color: rgb(71, 35, 0);
+    border: 2px solid rgb(71, 35, 0);
+    transition: 0.5 ease-in-out;
+}
+.about{
+    background-color: rgb(255, 249, 236);
+}
+.about img{
+    width: 5rem;
+}
+.abthldr{
+    position: relative;
+    height: 80vh;
+    overflow: hidden;
+}
+.abthldr img{
+    width: 100vw;
+    margin: 0;
+}
+.abthldr p{
+    position: absolute;
+    color: white;
+	top: 50%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10rem;
+}
+.dtls h1{
+    font-size: 3rem;
+    color: rgb(71, 35, 0);
+}
+.dtls{
+    display: flex;
+    padding: 3rem;
+    width: 100vw;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin: 0;
+}
+.txt{
+    width: 50vw;
+}
+.txt article{
+    width: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    margin-top: -1.3rem;
+}
+.imggg{
+    width: 50vw;
+}
+.imggg img{
+    width: 40vw;
+    margin-top: 1rem;
+}
+.fndr{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 10vh;
+}
+.fndr img{
+    width: 80vw;
+}
+.contt{
+    height: 50vh;
+    overflow: hidden;
+}
+.fndr{
+    color: rgb(71, 35, 0);
+}
+.fndr h5{
+    font-size: 4rem;
+    margin: 0;
+}
+.fndr p{
+    font-size: 1.4rem;
+    width: 70%;
+}
+
+
+
+
+
+
+@media (max-width: 480px) {
+    header{
+        width: 96vw;
+        padding: 0;
+    }
+    nav ul{
+        gap: 1rem;
+    }
+    .name{
+        font-size: 2rem;
+    }
+    nav ul li a{
+        font-size: 1rem;
+    }
+    .contact{
+        flex-wrap: wrap;
+        display: grid;
+    }
+    .addresses{
+        width: 85vw;
+    }
+    .addresses h1{
+        font-size: 3rem;
+        margin: 0;
+    }
+    .adrs img{
+        width: 2rem;
+        height: 2rem;
+    }
+    .adrs{
+        font-size: 1.3rem;
+    }
+    .msgfrm{
+        width: 100vw;
+        margin-top: 5rem;
+        align-items: center;
+    }
+    .dtls{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .txt{
+        width: 90%;
+        font-size: 1rem;
+    }
+    .imggg{
+        width: 90vw;
+        margin: 0;
+    }
+    .imggg img{
+        width: 90%;
+        margin: 0;
+    }
+    .fndr p{
+        font-size: 1.1rem;
+    }
+    #container{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 1rem;
+    }
+    #holder{
+        width: 100%;
+    }
+    .abthldr p{
+        top: 50%;
+        font-size: 4rem;
+        margin: 0;
+    }
+    .abthldr{
+        margin: 0;
+    }
+    .dtls{
+        margin-top: -30vh;
+    }
+    .dtls h1{
+        font-size: 2.8rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    margin-top: -2rem;
+    background-color: rgb(54, 41, 27);
+    padding-top: 1rem;
+}
+.foots{
+    width: 90%;
+    justify-self: center;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 0.699);
+    font-family: exquite;
+    font-weight: lighter;
+    list-style: none;
+}
+.foots h1{
+    font-size: 2rem;
+    letter-spacing: 4px;
+}
+.foots li{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    padding-bottom: 5px;
+}
+.footsec{
+    min-width: 20rem;
+}
+footer p{
+    color: white;
+    font-size: larger;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.logbtn{
+    background-color: white;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 1rem;
+    display: flexbox;
+    align-items: center;
+    justify-items: center;
+}
+.sgn{
+    background-color: rgb(71, 35, 0);
+    width: 7rem;
+    height: 3rem;
+    border-radius: 1rem;
+    border: none;
+    font-size: 1.2rem;
+    align-self: center;
+    margin-left: 0.15rem;
+}
+.lgn{
+    background-color: white;
+    margin: 0.15rem;
+    width: 7.3rem;
+    border: none;
+    height: 3rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    transition: 0.5s ease-in-out;
+}
+.lgn:hover{
+    color: white;
+    background-color: rgb(71, 35, 0);
+    transition: 0.5s ease;
+}
+.lgn:hover .sgn{
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
